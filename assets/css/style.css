@@ -13,10 +13,21 @@ Table Of Content
 */
 /* Common Css Start */
 :root{
-
+   --firstPrimaryColor:#FF6F61;
+   --scondPrimaryColor:#FF5645;
+   --thirdPrimarycolor: #151A32;
+   --textColor:#11161E;
+   --commonColor:#FFFFFF;
+   --paragraphColor:#444444;
+   --backroundColor:#F1F1F1;
+   --commonBlack:#000000;
+   --A6AAB7:#A6AAB7;
 }
 body{
-
+   font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,button{
+   font-family: 'Josefin Sans', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,
 p,
@@ -31,6 +42,154 @@ ol,ul{
 }
 a,a:hover{
    text-decoration: none;
-   display: inline-block;
 }
 /* //Common Css End */
+
+/* Nav Section CSS Start */
+#navBar #navMenu .mainMenu li{
+   margin-right: 25px;
+}
+#navBar #navMenu .mainMenu li a{
+   color: var(--textColor);
+   font-size: 16px;
+}
+#navBar #navMenu .mainMenu li a:hover{
+   color: var(--firstPrimaryColor);
+   transition: .4s;
+}
+#navBar .navbar_icon ul li button{
+   background: none;
+   border: none;
+   height: 24px;
+   width: 24px;
+   margin-right: 20px;
+   position: relative;
+   color: var(--textColor);
+}
+#navBar .navbar_icon ul li button:hover{
+   color: var(--firstPrimaryColor);
+   transition: .4s;
+}
+#navBar .navbar_icon ul li button span{
+   position: absolute;
+   top: -3px;
+   right: -5px;
+   font-size: 14px;
+   height: 15px;
+   width: 15px;
+   line-height: 15px;
+   border-radius: 50%;
+   text-align: center;
+   color: var(--backroundColor);
+   background-color: var(--firstPrimaryColor);
+}
+#Card .small_device{
+   position: fixed;
+   background-color: var(--A6AAB7);
+   bottom: 50px;
+   /* left: 50%;
+   transform: translateX(-50%); */
+}
+#Card .small_device ul li button{
+   background: none;
+   border: none;
+   height: 24px;
+   width: 24px;
+   font-size: 20px;
+   margin: auto 20px;
+   position: relative;
+}
+#Card .small_device ul li button:hover{
+   color: var(--firstPrimaryColor);
+   transition: .4s;
+}
+#Card .small_device ul li button span{
+   position: absolute;
+   top: -3px;
+   right: -5px;
+   font-size: 14px;
+   height: 15px;
+   width: 15px;
+   line-height: 15px;
+   border-radius: 50%;
+   text-align: center;
+   color: var(--backroundColor);
+   background-color: var(--firstPrimaryColor);
+}
+/* // Nav Section CSS End */
+
+/* Promotion Section CSS Start */
+#promotion .promotion_content{
+   padding: 20px 30px;
+   border-right: 4px solid var(--backroundColor);
+}
+#promotion .promotion_content:last-child{
+   border: none;
+}
+#promotion .promotion_content .img{
+   width: 70px;
+   height: 70px;
+   line-height: 70px;
+   border-radius: 50%;
+   background-color: var(--thirdPrimarycolor);
+   text-align: center;
+}
+#promotion .promotion_content .img h5{
+   color: var(--textColor);
+   font-size: 20px;
+   font-weight: 600;
+}
+#promotion .promotion_content .img p{
+   font-size: 16px;
+   color: var(--paragraphColor);
+   padding-top: 12px;
+}
+/* // Promotion Section CSS End */
+
+/* Footer Section CSS Start */
+#footer{
+   background-color: var(--thirdPrimarycolor);
+}
+#footer .footerMain{
+   padding: 80px 0px;
+}
+#footer .heading{
+   padding: 70px 0px;
+   border-bottom: 1px solid var(--backroundColor);
+}
+#footer .heading .social_icon i{
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   text-align: center;
+   background-color: var(--commonColor);
+   font-size: 24px;
+   color: var(--textColor);
+   margin-right: 10px;
+}
+#footer .heading .social_icon i:hover{
+   background-color: var(--firstPrimaryColor);
+   color: var(--commonColor);
+   transition: .4s;
+}
+#footer .footerMain .footerContent{
+   padding-top: 70px;
+}
+#footer .footerMain .footerContent .content h2{
+   font-size: 24px;
+   color: var(--commonColor);
+   font-weight: 700;
+   padding-bottom: 20px;
+}
+#footer .footerMain .footerContent .content a{
+   display: block;
+   color: var(--commonColor);
+   font-size: 16px;
+   padding-bottom: 7px;
+}
+#footer .footerMain .footerContent .content a:hover{
+   color: var(--firstPrimaryColor);
+   transition: .4s;
+}
+
+/* // Footer Section CSS End */

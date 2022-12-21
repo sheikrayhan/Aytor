@@ -5,9 +5,11 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Project Name</title>
+      <title>Aytor</title>
       <!-- Favicon link -->
       <link rel="icon" href="">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
       <!-- Fontawesome Css Link -->
       <link rel="stylesheet" href="./assets/css/fontawsome.css">
       <!-- Slick Css Link -->
@@ -22,6 +24,244 @@
    </head>
 
    <body>
+      <!-- Nav Section Start -->
+      <section id="navBar">
+         <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+               <img src="./assets/images/Logo.png" alt="" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="mainMenu navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Shop-1</a></li>
+                      <li><a class="dropdown-item" href="#">Shop-2</a></li>
+                      <li><a class="dropdown-item" href="#">Shop-3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Pages
+                       <i class="fa-solid fa-chevron-down"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Page-1</a></li>
+                       <li><a class="dropdown-item" href="#">Page-2</a></li>
+                       <li><a class="dropdown-item" href="#">Page-3</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Features
+                       <i class="fa-solid fa-chevron-down"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Feature-1</a></li>
+                       <li><a class="dropdown-item" href="#">Feature-2</a></li>
+                       <li><a class="dropdown-item" href="#">Feature-3</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Blogs
+                       <i class="fa-solid fa-chevron-down"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="#">Blog-1</a></li>
+                       <li><a class="dropdown-item" href="#">Blog-2</a></li>
+                       <li><a class="dropdown-item" href="#">Blog-3</a></li>
+                     </ul>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link"href="#">Contact</a>
+                   </li>
+                </ul>
+                <div class="navbar_icon d-none d-lg-block">
+                  <ul class="d-flex flex-wrap">
+                     <li><button><i class="fa-solid fa-search fa-rotate-90"></i></button></li>
+                     <li><button><i class="fa-regular fa-user"></i></button></li>
+                     <li><button><i class="fa-regular fa-heart"></i></button></li>
+                     <li><button>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>5</span>
+                     </button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+      </section>
+      <!-- Card Small for Device Section Start -->
+      <section id="Card">
+         <div class="small_device d-lg-none w-100">
+            <ul class="d-flex flex-wrap">
+               <li><button><i class="fa-solid fa-search fa-rotate-90"></i></button></li>
+               <li><button><i class="fa-regular fa-user"></i></button></li>
+               <li><button><i class="fa-regular fa-heart"></i></button></li>
+               <li><button>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span>5</span>
+               </button></li>
+            </ul>
+          </div>
+      </section>
+      <!-- Card Small Device Section End -->
+      <!-- Nav Section End -->
+
+      <!-- Promotion Section Start -->
+      <section id="promotion">
+          <div class="container">
+            <div class="row">
+               <div class="promotion_content col-lg-3 d-flex align-items-center">
+                  <div class="img me-2">
+                     <img src="./assets/images/promotion_truck.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="title">
+                     <h5>FREE SHIPING</h5>
+                     <p>all orders over <span>$150</span></p>
+                  </div>
+               </div>
+               <div class="promotion_content col-lg-3 d-flex align-items-center">
+                  <div class="img me-2">
+                     <img src="./assets/images/promotion_card.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="title">
+                     <h5>FREE SHIPING</h5>
+                     <p>all orders over <span>$150</span></p>
+                  </div>
+               </div>
+               <div class="promotion_content col-lg-3 d-flex align-items-center">
+                  <div class="img me-2">
+                     <img src="./assets/images/promotion_return.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="title">
+                     <h5>FREE SHIPING</h5>
+                     <p>all orders over <span>$150</span></p>
+                  </div>
+               </div>
+               <div class="promotion_content col-lg-3 d-flex align-items-center">
+                  <div class="img me-2">
+                     <img src="./assets/images/promotion_support.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="title">
+                     <h5>FREE SHIPING</h5>
+                     <p>all orders over <span>$150</span></p>
+                  </div>
+               </div>
+            </div>
+          </div>
+      </section>
+      <!-- Promotion Section End -->
+
+      <!-- Footer Section Start -->
+      <section id="footer">
+          <footer>
+            <div class="container">
+               <div class="footerMain">
+                  <div class="row heading justify-content-center align-items-center">
+                     <div class="col-lg-4 social_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                     </div>
+                     <div class="col-lg-4 text-center">
+                        <img src="./assets/images/footerLogo.png" alt="" class="img-fluid">
+                     </div>
+                     <div class="col-lg-4 text-end">
+                        <img src="./assets/images/footerCard.png" alt="">
+                     </div>
+                  </div>
+
+                  <div class="row footerContent">
+                     <div class="col-lg-2 content">
+                        <h2>My Account</h2>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           My Account
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           View Cart
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Wishlist
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Compare
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           New Products
+                        </a>
+                     </div>
+
+                     <div class="col-lg-2 content">
+                        <h2>Support</h2>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Help
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Contact Us
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Feedback
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Customer Service
+                        </a>
+                        <a href="#">
+                           <i class="fa-solid fa-angle-right"></i>
+                           Store Locations
+                        </a>
+                     </div>
+
+                     <div class="col-lg-2 content">
+                        <h2>Opening Time</h2>
+                        <div class="d-flex">
+                           <div class="date">
+                              <p>Mon - Tue:</p>
+                              <p>Wed:</p>
+                              <p>Fri:</p>
+                              <p>Sat:</p>
+                              <p>Sub:</p>
+                           </div>
+                           <div class="time">
+                              <p>8Am - 10PM</p>
+                              <p>8AM - 7PM</p>
+                              <p>7AM - 12PM</p>
+                              <p>9AM - 8PM</p>
+                              <p>Closed</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3"></div>
+                     <div class="col-lg-3"></div>
+                  </div>
+               </div>
+            </div>
+          </footer>
+      </section>
+      <!-- Footer Section End -->
+      
 
 
 
