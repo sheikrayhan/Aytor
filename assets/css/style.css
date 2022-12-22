@@ -119,6 +119,11 @@ a,a:hover{
 /* // Nav Section CSS End */
 
 /* Promotion Section CSS Start */
+#promotion .promotion_section{
+   position: relative;
+   margin-bottom: -55px;
+   z-index: 9;
+}
 #promotion .promotion_content{
    padding: 20px 30px;
    border-right: 4px solid var(--backroundColor);
@@ -131,7 +136,7 @@ a,a:hover{
    height: 70px;
    line-height: 70px;
    border-radius: 50%;
-   background-color: var(--thirdPrimarycolor);
+   background-color: var(--firstPrimaryColor);
    text-align: center;
 }
 #promotion .promotion_content .img h5{
@@ -148,7 +153,17 @@ a,a:hover{
 
 /* Footer Section CSS Start */
 #footer{
-   background-color: var(--thirdPrimarycolor);
+   background-image: url(../images/footer_bg.jpg);
+   position: relative;
+   z-index: 1;
+}
+#footer::before{
+   content: '';
+   position: absolute;
+   inset: 0;
+   background-color: #111111;
+   opacity: .9;
+   z-index: -1;
 }
 #footer .footerMain{
    padding: 80px 0px;
@@ -191,5 +206,47 @@ a,a:hover{
    color: var(--firstPrimaryColor);
    transition: .4s;
 }
-
+#footer .footerMain .footerContent .content .date p,
+#footer .footerMain .footerContent .content .time p{
+   font-size: 16px;
+   font-weight: 700;
+   color: var(--commonColor);
+   padding-bottom: 7px;
+}
+#footer .footerMain .footerContent .contactUs h2{
+   font-size: 24px;
+   color: var(--commonColor);
+   font-weight: 700;
+   padding-bottom: 20px;
+}
+#footer .footerMain .footerContent .contactUs .contact_item i{
+   color: var(--firstPrimaryColor);
+}
+#footer .footerMain .footerContent .contactUs .contact_item a{
+   font-size: 16px;
+   color: var(--commonColor);
+}
+#footer .footerMain .footerContent .news_letter h2{
+   font-size: 24px;
+   color: var(--commonColor);
+   font-weight: 700;
+   padding-bottom: 20px;
+}
+#footer .footerMain .footerContent .news_letter p{
+   color: var(--commonColor);
+   font-size: 14px;
+   padding-bottom: 25px;
+   line-height: 28px;
+   text-align: start;
+}
+#footer .footerMain .footerContent .news_letter form input{
+   padding: 15px 10px;
+}
+#footer .footerMain .footerContent .news_letter form span button{
+   background: none;
+   border: none;
+}
+#footer .footerMain .footerContent .news_letter form span{
+   background-color: var(--firstPrimaryColor);
+}
 /* // Footer Section CSS End */

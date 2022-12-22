@@ -31,7 +31,7 @@
               <a class="navbar-brand" href="index.html">
                <img src="./assets/images/Logo.png" alt="" class="img-fluid">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="#navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navMenu">
@@ -105,7 +105,7 @@
       <!-- Card Small for Device Section Start -->
       <section id="Card">
          <div class="small_device d-lg-none w-100">
-            <ul class="d-flex flex-wrap">
+            <ul class="d-flex flex-wrap justify-content-between">
                <li><button><i class="fa-solid fa-search fa-rotate-90"></i></button></li>
                <li><button><i class="fa-regular fa-user"></i></button></li>
                <li><button><i class="fa-regular fa-heart"></i></button></li>
@@ -122,10 +122,10 @@
       <!-- Promotion Section Start -->
       <section id="promotion">
           <div class="container">
-            <div class="row">
+            <div class="row bg-white promotion_section">
                <div class="promotion_content col-lg-3 d-flex align-items-center">
                   <div class="img me-2">
-                     <img src="./assets/images/promotion_truck.png" alt="" class="img-fluid">
+                     <img src="./assets/images/promotion_delivery-truck.png" alt="" class="img-fluid">
                   </div>
                   <div class="title">
                      <h5>FREE SHIPING</h5>
@@ -134,7 +134,7 @@
                </div>
                <div class="promotion_content col-lg-3 d-flex align-items-center">
                   <div class="img me-2">
-                     <img src="./assets/images/promotion_card.png" alt="" class="img-fluid">
+                     <img src="./assets/images/promotion_credit-card.png" alt="" class="img-fluid">
                   </div>
                   <div class="title">
                      <h5>FREE SHIPING</h5>
@@ -143,7 +143,7 @@
                </div>
                <div class="promotion_content col-lg-3 d-flex align-items-center">
                   <div class="img me-2">
-                     <img src="./assets/images/promotion_return.png" alt="" class="img-fluid">
+                     <img src="./assets/images/promotion_customer-service.png" alt="" class="img-fluid">
                   </div>
                   <div class="title">
                      <h5>FREE SHIPING</h5>
@@ -152,7 +152,7 @@
                </div>
                <div class="promotion_content col-lg-3 d-flex align-items-center">
                   <div class="img me-2">
-                     <img src="./assets/images/promotion_support.png" alt="" class="img-fluid">
+                     <img src="./assets/images/promotion_customer-service.png" alt="" class="img-fluid">
                   </div>
                   <div class="title">
                      <h5>FREE SHIPING</h5>
@@ -170,16 +170,16 @@
             <div class="container">
                <div class="footerMain">
                   <div class="row heading justify-content-center align-items-center">
-                     <div class="col-lg-4 social_icon">
+                     <div class="col social_icon">
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-pinterest-p"></i>
                      </div>
-                     <div class="col-lg-4 text-center">
+                     <div class="col text-center">
                         <img src="./assets/images/footerLogo.png" alt="" class="img-fluid">
                      </div>
-                     <div class="col-lg-4 text-end">
+                     <div class="col text-end">
                         <img src="./assets/images/footerCard.png" alt="">
                      </div>
                   </div>
@@ -233,7 +233,7 @@
                         </a>
                      </div>
 
-                     <div class="col-lg-2 content">
+                     <div class="col-lg-2 g-0 content">
                         <h2>Opening Time</h2>
                         <div class="d-flex">
                            <div class="date">
@@ -241,9 +241,9 @@
                               <p>Wed:</p>
                               <p>Fri:</p>
                               <p>Sat:</p>
-                              <p>Sub:</p>
+                              <p>Sun:</p>
                            </div>
-                           <div class="time">
+                           <div class="time ps-3">
                               <p>8Am - 10PM</p>
                               <p>8AM - 7PM</p>
                               <p>7AM - 12PM</p>
@@ -253,8 +253,48 @@
                         </div>
                      </div>
 
-                     <div class="col-lg-3"></div>
-                     <div class="col-lg-3"></div>
+                     <div class="col-lg-3 px-4 contactUs">
+                        <h2>Contac Us</h2>
+
+                        <div class="contact_item d-flex pb-2">
+                           <div class="d-flex align-items-center pe-3">
+                              <i class="fa-solid fa-location-dot"></i>
+                           </div>
+                           <div>
+                              <a href="#">830 Broadway, New York, NY 10003, United States</a>
+                           </div>
+                        </div>
+
+                        <div class="contact_item d-flex pb-2">
+                           <div class="d-flex align-items-center pe-3">
+                              <i class="fa-solid fa-phone"></i>
+                           </div>
+                           <div>
+                              <a href="#">+18008660286</a>
+                           </div>
+                        </div>
+
+                        <div class="contact_item d-flex pb-2">
+                           <div class="d-flex align-items-center pe-3">
+                              <i class="fa-solid fa-envelope"></i>
+                           </div>
+                           <div>
+                              <a href="#">aetor.info@gmail.com</a>
+                              <a href="#">info@aetor.com</a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 news_letter">
+                        <h2>News Letter</h2>
+                        <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                        <form action="">
+                           <div class="input-group flex-nowrap">
+                              <input type="email" class="form-control" placeholder="Enter your email..." aria-label="Username" aria-describedby="addon-wrapping">
+                              <span class="input-group-text" id="addon-wrapping"><button type="submit">Subscribe</button></span>
+                            </div>
+                        </form>
+                     </div>
                   </div>
                </div>
             </div>
