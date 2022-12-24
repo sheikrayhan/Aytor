@@ -13,6 +13,10 @@ Table Of Content
 */
 /* Common Css Start */
 :root{
+   --bodyFont: 'Roboto', sans-serif;
+   --headingFont: 'Josefin Sans', sans-serif;
+}
+:root{
    --firstPrimaryColor:#FF6F61;
    --scondPrimaryColor:#FF5645;
    --thirdPrimarycolor: #151A32;
@@ -24,10 +28,10 @@ Table Of Content
    --A6AAB7:#A6AAB7;
 }
 body{
-   font-family: 'Roboto', sans-serif;
+   font-family: var(--bodyFont);
 }
 h1,h2,h3,h4,h5,h6,a,button{
-   font-family: 'Josefin Sans', sans-serif;
+   font-family: var(--headingFont);
 }
 h1,h2,h3,h4,h5,h6,
 p,
@@ -125,6 +129,13 @@ a,a:hover{
    background-position: center !important;
    position: relative;
    z-index: 1;
+}
+#banner .banner_slider_item h4{
+   padding-top: 150px;
+   transition: 1s;
+}
+#banner .banner_slider_item.slick-active h4{
+   padding-top: 0;
 }
 #banner .banner_slider_item::after{
    content: '';
