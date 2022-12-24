@@ -206,6 +206,145 @@ a,a:hover{
 }
 /* // Banner Section CSS End */
 
+/* Features Section CSS Start */
+#features{
+   margin: 100px 0px;
+}
+#features .features_items{
+   position: relative;
+}#features .features_items::before{
+   content: '';
+   position: absolute;
+   background-color: var(--textColor);
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(0);
+   transition: .4s ease-in-out;
+}
+#features .features_items:hover::before{
+   opacity: 0.5;
+   visibility: visible;
+   transform: scale(1);
+}
+#features .features_items .featues_title{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   visibility: hidden;
+}
+#features .features_items:hover .featues_title{
+   opacity: 1;
+   visibility: visible;
+   transition: .4s linear;
+}
+#features .features_items .featues_title h2{
+   color: var(--commonColor);
+   font-weight: 700;
+   font-size: 30px;
+   transition: .4s;
+}
+#features .features_items .featues_title h2:hover{
+   color: var(--firstPrimaryColor);
+}
+#features .features_items .featues_title a{
+   color: var(--commonColor);
+   font-weight: 600;
+   font-size: 16px;
+   padding-bottom: 10px;
+   transition: .4s;
+}
+#features .features_items .featues_title a:hover{
+   color: var(--firstPrimaryColor);
+}
+#features .features_items .featues_title .titles{
+   position: relative;
+   margin-bottom: -100px;
+   transition: .4s linear;
+}
+#features .features_items:hover .titles{
+   margin-bottom: 0;
+}
+#features .features_items .featues_title .titles .features_btn::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 2px;
+   background-color: var(--commonColor);
+   transition: all ease 0.4s;
+}
+#features .features_items .featues_title .titles .features_btn:hover::after{
+   background-color: var(--firstPrimaryColor);
+   width: 100%;
+}
+/* // Features Section CSS End */
+
+
+
+/* Discount Section CSS Start */
+#discount{
+   margin-bottom: 100px;
+}
+#discount .discount_bg{
+   background-image: url(../images/discount_bg_1.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 524px;
+   position: relative;
+   z-index:1;
+}
+#discount .discount_bg::after{
+   content: '';
+   position: absolute;
+   /* pointer-events: none; */
+   opacity: 1;
+   top: 0;
+   right: 51%;
+   bottom: 0;
+   left: 50%;
+   background: rgba(255,255,255,0.2);
+   transform: skew(45deg);
+   z-index: -1;
+}
+#discount .discount_bg:hover::after{
+   left: 0;
+   right: 0;
+   opacity: 0;
+   transition: all 900ms linear;
+}
+#discount .discount_bg .discount_item h2{
+   color: var(--commonColor);
+   font-weight: 700;
+   font-size: 36px;
+}
+#discount .discount_bg .discount_item p{
+   color: var(--commonColor);
+   font-weight: 400;
+   font-size: 16px;
+   margin: 35px 0px;
+}
+#discount .discount_bg .discount_item a{
+   color: var(--commonColor);
+   font-weight: 600;
+   font-size: 18px;
+   padding: 17px 30px;
+   border: 1px solid var(--commonColor);
+   transition: .4s linear;
+}
+#discount .discount_bg .discount_item a:hover{
+   background-color: var(--firstPrimaryColor);
+   border: 1px solid var(--firstPrimaryColor);
+}
+/* // Discount Section CSS End */
+
 /* Promotion Section CSS Start */
 #promotion .promotion_section{
    position: relative;
