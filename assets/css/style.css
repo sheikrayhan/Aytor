@@ -287,7 +287,144 @@ a,a:hover{
 }
 /* // Features Section CSS End */
 
+/* New Arrival Product Section CSS Start */
+#newArrival_product{
+   margin-bottom: 100px;
+}
+#newArrival_product .product_layout{
+   border: 1px solid #F1F3F4;
+}
+#newArrival_product .product_layout .product-img{
+   overflow: hidden;
+   position: relative;
+}
+#newArrival_product .product_layout .product-img img{
+   width: 100% !important;
+   height: auto;
+   transform: scale(1.1);
+   visibility: visible;
+   opacity: 1;
+   transition: .4s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img img{
+   transform: scale(1);
+   visibility: hidden;
+   opacity: 0;
+}
+#newArrival_product .product_layout .product-img .inner_img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1);
+   transition: .4s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img .inner_img{
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1.1);
+}
+#newArrival_product .product_layout .product-img .action{
+   position: absolute;
+   right: 15px;
+   top: 40px;
+}
+#newArrival_product .product_layout .product-img .action a{
+   margin-bottom: 10px;
+}
+#newArrival_product .product_layout .product-img .action .action_1{
+   opacity: 0;
+   visibility: hidden;
+   transform: translateX(70px);
+   transition: .4s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img .action .action_1{
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0px);
+}
+#newArrival_product .product_layout .product-img .action .action_2{
+   opacity: 0;
+   visibility: hidden;
+   transform: translateX(70px);
+   transition: .5s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img .action .action_2{
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0px);
+}
+#newArrival_product .product_layout .product-img .action .action_3{
+   opacity: 0;
+   visibility: hidden;
+   transform: translateX(70px);
+   transition: .6s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img .action .action_3{
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0px);
+}
+#newArrival_product .product_layout .product-img .action .action_4{
+   opacity: 0;
+   visibility: hidden;
+   transform: translateX(70px);
+   transition: .7s ease-in-out;
+}
+#newArrival_product .product_layout:hover .product-img .action .action_4{
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0px);
+}
+#newArrival_product .product_layout .product-img .label_tag{
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 16px;
+   background-color: var(--scondPrimaryColor);
+   color: var(--commonColor);
+   padding: 6px 30px 4px 10px;
+   /* border-radius: 50%; */
+   border-radius: 999999px;
+   transform: rotate(-90deg);
+}
 
+#newArrival_product .product_layout .product-img .action a i{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   line-height: 50px;
+   background-color: var(--commonColor);
+   color: var(--thirdPrimarycolor);
+   text-align: center;
+   transition: .4s linear;
+}
+#newArrival_product .product_layout .product-img .action a:hover i{
+   color: var(--commonColor);
+   background-color: var(--firstPrimaryColor);
+}
+
+#newArrival_product .product_layout .product_Content .product_details p{
+   color: var(--paragraphColor);
+   font-size: 16px;
+   padding: 30px 0px 15px 0px;
+}
+#newArrival_product .product_layout .product_Content .product_details h3{
+   color: var(--textColor);
+   font-weight: 600;
+   font-size: 20px;
+   transition: .4s linear;
+   cursor: pointer;
+}
+#newArrival_product .product_layout .product_Content .product_details h3:hover{
+   color: var(--firstPrimaryColor);
+}
+#newArrival_product .product_layout .product_Content .product_details a{
+   font-size: 14px;
+   color: var(--scondPrimaryColor);
+}
+/* // New Arrival Product Section CSS End */
 
 /* Discount Section CSS Start */
 #discount{
@@ -318,7 +455,7 @@ a,a:hover{
    left: 0;
    right: 0;
    opacity: 0;
-   transition: all 900ms linear;
+   transition: all 1s linear;
 }
 #discount .discount_bg .discount_item h2{
    color: var(--commonColor);
