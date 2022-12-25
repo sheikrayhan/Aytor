@@ -14,7 +14,7 @@ $(function () {
    $('.Product_slider').slick({
       arrows: false,
       slidesToShow: 4,
-      slidesToScroll: 1,
+      slidesToScroll: 4,
       autoplay: true,
       autoplaySpeed: 1500,
    });
@@ -25,7 +25,7 @@ $(function () {
       $('.clock_b').html(event.strftime('%H Hours'));
       $('.clock_c').html(event.strftime('%M Minutes'));
       $('.clock_d').html(event.strftime('%S Seconds'));
-      $('.clock_dots').html(event.strftime(':'));
+      // $('.clock_dots').html(event.strftime(':'));
     });
 
 
