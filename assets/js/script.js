@@ -1,7 +1,7 @@
 $(function () {
    'use strict';
 
-   // Banner Slider Activate
+   // Banner Slider Activate...
    $('.banner_slider').slick({
       arrows: false,
       dots: true,
@@ -10,7 +10,7 @@ $(function () {
       autoplaySpeed: 2000
    });
 
-   // New Arrival Product slider Activate
+   // New Arrival Product slider Activate...
    $('.Product_slider').slick({
       arrows: false,
       slidesToShow: 4,
@@ -18,4 +18,15 @@ $(function () {
       autoplay: true,
       autoplaySpeed: 1500,
    });
+
+   // Countdown Initialize....
+   $('.clock').countdown('2023/01/01', function(event) {
+      $('.clock_a').html(event.strftime('%d Days'));
+      $('.clock_b').html(event.strftime('%H Hours'));
+      $('.clock_c').html(event.strftime('%M Minutes'));
+      $('.clock_d').html(event.strftime('%S Seconds'));
+      $('.clock_dots').html(event.strftime(':'));
+    });
+
+
 })
