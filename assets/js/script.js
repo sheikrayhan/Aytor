@@ -38,4 +38,7 @@ $(function () {
       autoplaySpeed: 1500,
    });
 
+   // VenoBox Initialize..
+   new VenoBox();
+
 })
