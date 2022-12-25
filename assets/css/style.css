@@ -482,6 +482,20 @@ a,a:hover{
 }
 /* // Discount Section CSS End */
 
+/* Best Seller Products Section CSS Start */
+#newArrival_product .see_all a{
+   background-color: var(--scondPrimaryColor);
+   font-weight: 600;
+   font-size: 16px;
+   color: var(--commonColor);
+   padding: 14px 25px;
+   transition: .4s linear;
+}
+#newArrival_product .see_all a:hover{
+   background-color: var(--thirdPrimarycolor);
+}
+/* // Best Seller Products Section CSS End */
+
 /* Count Down  Section CSS Start */
 #Countdown .timer h2{
    color: var(--textColor);
