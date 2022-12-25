@@ -28,5 +28,14 @@ $(function () {
       // $('.clock_dots').html(event.strftime(':'));
     });
 
+   //  Deals Of The Days Slider Initialize...
+   $('.dealsOFthe_day').slick({
+      arrows: false,
+      dots: true,
+      dotsClass: 'discount_slider_dots ',
+      slidesToShow: 2,
+      autoplay: true,
+      autoplaySpeed: 1500,
+   });
 
 })

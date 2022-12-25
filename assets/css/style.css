@@ -482,7 +482,7 @@ a,a:hover{
 }
 /* // Discount Section CSS End */
 
-/* CountDown  Section CSS Start */
+/* Count Down  Section CSS Start */
 #Countdown .timer h2{
    color: var(--textColor);
    font-weight: 700;
@@ -506,9 +506,119 @@ a,a:hover{
    border-radius: 50%;
    line-height: 0;
 }
-/* // CountDown  Section CSS End */
+#Countdown .dealsOFthe_day .banner_container{
+   background-size: cover !important;
+   background-position: center !important;
+   position: relative;
+   z-index: 1;
+}
+#Countdown .dealsOFthe_day .banner_container::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 51%;
+   bottom: 0;
+   left: 50%;
+   opacity: 1;
+   background: rgba(255,255,255,0.2);
+   z-index: -1;
+}
+#Countdown .dealsOFthe_day .banner_container:hover::before{
+   left: 0;
+   right: 0;
+   opacity: 0;
+   transition: all 900ms linear;
+}
+#Countdown .dealsOFthe_day .banner_container::after{
+   content: '';
+   position: absolute;
+   top: 51%;
+   right: 0;
+   bottom: 50%;
+   left: 0;
+   opacity: 1;
+   background: rgba(255,255,255,0.2);
+   z-index: -1;
+}
+#Countdown .dealsOFthe_day .banner_container:hover::after{
+   top: 0;
+   bottom: 0;
+   opacity: 0;
+   transition: all 900ms linear;
+}
+#Countdown .dealsOFthe_day .banner_container{
+   padding: 40px;
+}
+#Countdown .dealsOFthe_day .banner_container h5{
+   font-weight: 600;
+   font-size: 18px;
+   color: var(--textColor);
+}
+#Countdown .dealsOFthe_day .banner_container h2{
+   font-weight: 700;
+   font-size: 36px;
+   color: var(--textColor);
+   padding: 25px 0px;
+}
+#Countdown .dealsOFthe_day .banner_container p{
+   font-size: 16px;
+   color: var(--paragraphColor);
+}
+#Countdown .dealsOFthe_day .banner_container span{
+   font-weight: 600;
+   font-size: 20px;
+   color: var(--textColor);
+   padding: 30px 0px 40px 0px;
+}
+#Countdown .dealsOFthe_day .banner_container .del{
+   color: var(--paragraphColor);
+   font-weight: 600;
+   font-size: 20px;
+   margin-left: 13px;
+}
+#Countdown .dealsOFthe_day .banner_container a{
+   background-color: var(--thirdPrimarycolor);
+   font-weight: 600;
+   font-size: 16px;
+   color: var(--commonColor);
+   padding: 14px 25px;
+   transition: .4s linear;
+}
+#Countdown .dealsOFthe_day .banner_container a:hover{
+   background-color: var(--scondPrimaryColor);
+}
+
+#Countdown .dealsOFthe_day .discount_slider_dots{
+   position: absolute;
+   bottom: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#Countdown .dealsOFthe_day .discount_slider_dots li{
+   line-height: 0;
+   display: inline-block;
+   margin-right: 5px;
+}
+#Countdown .dealsOFthe_day .discount_slider_dots li button{
+   background: none;
+   border: none;
+   font-size: 0;
+   width: 10px;
+   height: 6px;
+   background: var(--paragraphColor);
+   border-radius: 5px;
+   transition: .5s linear;
+}
+#Countdown .dealsOFthe_day .discount_slider_dots li.slick-active button{
+   width: 26px;
+   background-color: var(--textColor);
+}
+/* // Count Down  Section CSS End */
 
 /* Promotion Section CSS Start */
+#promotion{
+   margin-top: 100px;
+}
 #promotion .promotion_section{
    position: relative;
    margin-bottom: -55px;
