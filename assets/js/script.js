@@ -5,7 +5,7 @@ $(function () {
    $('.banner_slider').slick({
       arrows: false,
       dots: true,
-      dotsClass: 'banner_slider_dots ',
+      dotsClass: 'banner_slider_dots',
       autoplay: true,
       autoplaySpeed: 2000
    });
@@ -32,8 +32,18 @@ $(function () {
    $('.dealsOFthe_day').slick({
       arrows: false,
       dots: true,
-      dotsClass: 'discount_slider_dots ',
+      dotsClass: 'discount_slider_dots',
       slidesToShow: 2,
+      autoplay: true,
+      autoplaySpeed: 1500,
+   });
+
+   // Blog Slider Initialize...
+   $('.blog_slider').slick({
+      arrows: false,
+      dots: true,
+      dotsClass: 'blog_slider_dots',
+      slidesToShow: 3,
       autoplay: true,
       autoplaySpeed: 1500,
    });
