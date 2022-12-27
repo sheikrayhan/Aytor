@@ -299,8 +299,7 @@ a,a:hover{
    margin-bottom: 50px;
 }
 #newArrival_product .product_layout{
-   box-shadow: 0px 5px 14px rgba(17,22,30,0.08);
-   /* border: 1px solid #F1F3F4; */
+   box-shadow: 0px 5px 14px rgba(17, 22, 30, 0.08);
 }
 #newArrival_product .product_layout .product-img{
    overflow: hidden;
@@ -750,7 +749,7 @@ a,a:hover{
    margin-bottom: 80px;
 }
 #blog .slider_item{
-   box-shadow: 0px 5px 14px rgba(17,22,30,0.08);
+   box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.1);
 }
 #blog .slider_item .slider_container{
    padding: 10px;
