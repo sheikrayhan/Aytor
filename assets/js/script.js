@@ -20,12 +20,15 @@ $(function () {
    });
 
    // Countdown Initialize....
-   $('.clock').countdown('2023/01/01', function(event) {
-      $('.clock_a').html(event.strftime('%d Days'));
-      $('.clock_b').html(event.strftime('%H Hours'));
-      $('.clock_c').html(event.strftime('%M Minutes'));
-      $('.clock_d').html(event.strftime('%S Seconds'));
-      // $('.clock_dots').html(event.strftime(':'));
+   $('.countdown_container').countdown('2023/10/10', function(event) {
+      var $this = $(this).html(event.strftime(''
+        + '<div class="deals_item"><span>%D</span><span>Days</span></div>'
+        + '<div class="separator">:</div>'
+        + '<div class="deals_item"><span>%H</span><span>Hour</span></div>'
+        + '<div class="separator">:</div>'
+        + '<div class="deals_item"><span>%M</span><span>Minute</span></div>'
+        + '<div class="separator">:</div>'
+        + '<div class="deals_item"><span>%S</span><span>Sec</span></div>'));
     });
 
    //  Deals Of The Days Slider Initialize...

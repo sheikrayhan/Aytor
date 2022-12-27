@@ -292,6 +292,12 @@ a,a:hover{
 #newArrival_product{
    margin-bottom: 100px;
 }
+#newArrival_product .arival_heading{
+   color: var(--textColor);
+   font-weight: 700;
+   font-size: 36px;
+   margin-bottom: 50px;
+}
 #newArrival_product .product_layout{
    box-shadow: 0px 5px 14px rgba(17,22,30,0.08);
    /* border: 1px solid #F1F3F4; */
@@ -499,28 +505,31 @@ a,a:hover{
 /* // Best Seller Products Section CSS End */
 
 /* Count Down  Section CSS Start */
-#Countdown .timer h2{
+#Countdown .countdown_heading{
    color: var(--textColor);
    font-weight: 700;
    font-size: 36px;
 }
-#Countdown .timer .clock{
+#Countdown .countdown_container{
+   border-radius: 40px;
+   box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.1);
+   padding: 5px 75px;
    margin: 40px 0px;
 }
-#Countdown .timer .clock span{
+#Countdown .countdown_container .deals_item span:first-child{
    color: var(--textColor);
-   font-size: 24px;
    font-weight: 700;
+   font-size: 24px;
 }
-#Countdown .timer .clock .clock_dots{
+#Countdown .countdown_container .deals_item span:last-child{
+   color: var(--paragraphColor);
+   font-size: 16px;
+   display: block;
+}
+#Countdown .countdown_container .separator{
+   font-size: 45px;
+   font-weight: 700;
    color: var(--scondPrimaryColor);
-   font-size: 35px;
-   font-weight: 800;
-   width: 12px;
-   height: 12px;
-   display: inline-block;
-   border-radius: 50%;
-   line-height: 0;
 }
 #Countdown .dealsOFthe_day .banner_container{
    background-size: cover !important;
