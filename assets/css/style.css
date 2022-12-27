@@ -49,6 +49,70 @@ a,a:hover{
 }
 /* //Common Css End */
 
+/* Popup Newsletter Section CSS Start */
+#popup{
+   visibility: hidden;
+}
+/* #popup{
+   position: fixed;
+   top: 10%;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 99999999999999999999999999999;
+} */
+#popup .popup_container{
+   background-color: var(--firstPrimaryColor);
+}
+#popup .popup_container .info{
+   padding: 50px 50px 0px 50px;
+}
+#popup .popup_container .info h2{
+   color: var(--commonColor);
+   font-weight: 700;
+   font-size: 40px;
+}
+#popup .popup_container .info p{
+   color: var(--commonColor);
+   font-size: 16px;
+   padding: 20px 40px;
+}
+#popup .popup_container .info form .email{
+   background-color: none;
+   border: none;
+   color: var(--paragraphColor);
+   width: 350px;
+   font-weight: 500;
+   text-align: justify;
+   padding: 10px 20px;
+   margin-bottom: 40px;
+}
+#popup .popup_container .info form button{
+   border: none;
+   background: none;
+   background-color: var(--commonColor);
+   color: var(--scondPrimaryColor);
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: 700;
+   margin-left: 0;
+   transition: .4s linear;
+}
+#popup .popup_container .info form button:hover{
+   background-color: var(--textColor);
+   color: var(--commonColor);
+   margin-left: 10px;
+}
+#popup .popup_container .info .check_box input{
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+}
+#popup .popup_container .info .check_box label{
+   color: var(--commonColor);
+   font-size: 18px;
+}
+/* // Popup Newsletter Section CSS End */
+
 /* Nav Section CSS Start */
 #navBar #navMenu .mainMenu li{
    margin-right: 25px;
