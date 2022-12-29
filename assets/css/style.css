@@ -27,6 +27,9 @@ Table Of Content
    --commonBlack:#000000;
    --A6AAB7:#A6AAB7;
 }
+body,html{
+   overflow-x: hidden;
+}
 body{
    font-family: var(--bodyFont);
 }
@@ -51,15 +54,16 @@ a,a:hover{
 
 /* Popup Newsletter Section CSS Start */
 #popup{
-   visibility: hidden;
+   display: none;
 }
-/* #popup{
+#popup{
    position: fixed;
-   top: 10%;
+   width: 100%;
+   top: 50%;
    left: 50%;
-   transform: translateX(-50%);
+   transform: translate(-50%, -50%);
    z-index: 99999999999999999999999999999;
-} */
+}
 #popup .popup_container{
    background-color: var(--firstPrimaryColor);
 }
@@ -84,7 +88,6 @@ a,a:hover{
    font-weight: 500;
    text-align: justify;
    padding: 10px 20px;
-   margin-bottom: 40px;
 }
 #popup .popup_container .info form button{
    border: none;
@@ -155,6 +158,7 @@ a,a:hover{
    position: fixed;
    background-color: var(--A6AAB7);
    bottom: 50px;
+   z-index: 999;
    /* left: 50%;
    transform: translateX(-50%); */
 }
@@ -281,10 +285,7 @@ a,a:hover{
    content: '';
    position: absolute;
    background-color: var(--textColor);
-   top: 0;
-   bottom: 0;
-   width: 100%;
-   height: 100%;
+   inset: 20px;
    opacity: 0;
    visibility: hidden;
    transform: scale(0);
@@ -577,7 +578,7 @@ a,a:hover{
    border-radius: 40px;
    box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.1);
    padding: 5px 75px;
-   margin: 40px 0px;
+   margin: 40px 0px 70px 0px;
 }
 #Countdown .countdown_container .deals_item span:first-child{
    color: var(--textColor);
