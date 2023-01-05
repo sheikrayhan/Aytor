@@ -1,6 +1,11 @@
 $(function () {
    'use strict';
 
+   // PopUp Hide
+   $('.hide_btn').on('click', function () {
+         $('#popup').hide(500)
+    })
+
    // Banner Slider Activate...
    $('.banner_slider').slick({
       arrows: false,
@@ -54,7 +59,24 @@ $(function () {
    // VenoBox Initialize..
    new VenoBox();
 
+   // Back to top
+   $(window).on('scroll', function () {
+      var scrollSize = $(window).scrollTop();
+      if (scrollSize > 1000) {
+         $('#back_to_top').show(500);
+      } else {
+         $('#back_to_top').hide(500);
+      }
+   })
+   $('#back_to_top').on('click', function () {
+      $('html, body').animate({
+         scrollTop:0
+      })
+   })
+
+
 })
+
 
 // Tool tip Method 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

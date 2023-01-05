@@ -53,9 +53,9 @@ a,a:hover{
 /* //Common Css End */
 
 /* Popup Newsletter Section CSS Start */
-#popup{
+/* #popup{
    display: none;
-}
+} */
 #popup{
    position: fixed;
    width: 100%;
@@ -69,6 +69,21 @@ a,a:hover{
 }
 #popup .popup_container .info{
    padding: 50px 50px 0px 50px;
+   position: relative;
+}
+#popup .popup_container .info .hide_btn{
+   position: absolute;
+   right: 0;
+   top: 20px;
+   font-size: 20px;
+   height: 40px;
+   width: 40px;
+   color: var(--commonColor);
+   cursor: pointer;
+   transition: .4s;
+}
+#popup .popup_container .info .hide_btn:hover{
+   color: var(--textColor);
 }
 #popup .popup_container .info h2{
    color: var(--commonColor);
@@ -1050,3 +1065,35 @@ a,a:hover{
    background-color: var(--firstPrimaryColor);
 }
 /* // Footer Section CSS End */
+
+/* Back to Top Section CSS Start */
+#back_to_top{
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   border: none;
+   width: 50px;
+   height: 50px;
+   line-height: 0;
+   border-radius: 50%;
+   background: var(--firstPrimaryColor);
+   color: var(--commonColor);
+   z-index: 9999;
+   transition: .5s;
+   cursor: pointer;
+   /* display: none; */
+}
+/* #back_to_top::after{
+   content: '';
+   position: absolute;
+   left: -6px;
+   top: -6px;
+   right: -6px;
+   bottom: -6px;
+   background-color: #fff;
+   border-radius: inherit;
+} */
+#back_to_top:hover{
+   background: var(--textColor);
+}
+/* Back to Top Section CSS End */
